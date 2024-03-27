@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Cone Volume Calculator</title>
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/cone_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/cone_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/cone_favicon/favicon-16x16.png">
+    <link rel="manifest" href="/cone_favicon/site.webmanifest">
+    
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p>Paragraph</p>
+    <script src="js/script.js"></script>
+    <!-- Text and Inputs -->
+    <h1>Cone Volume Calculator</h1>
+    <p>Enter your data below, and click the button to calculate the volume of a Cone</p>
+    <p>Radius: <input type="number" id="radius"></p>
+    <p>Height: <input type="number" id="height"></p>
+    <p>Decimal places: <input type="number" id="decimals"></p>
+    <br>
+    <!-- Enable/Disable Area and Perimeter Calculations -->
+    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+      <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+      <span class="mdl-radio__label">Calculate Area</span>
+    </label>
+    <br>
+    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+      <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+      <span class="mdl-radio__label">Calculate Perimeter</span>
+    </label>
+    <br>
+    <br>
+    <!-- Calculate Button and Output -->
+    <button onclick="Calculate()">Click to Calculate</button>
+    <div id="Output"></div>
   </body>
 </html>
