@@ -7,32 +7,48 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/cone_favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/cone_favicon/favicon-16x16.png">
     <link rel="manifest" href="/cone_favicon/site.webmanifest">
-    
+
+    <!-- mdl -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-amber.min.css" />    
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- Text and Inputs -->
-    <h1>Cone Volume Calculator</h1>
-    <p>Enter your data below, and click the button to calculate the volume of a Cone</p>
-    <p>Radius: <input type="number" id="radius"></p>
-    <p>Height: <input type="number" id="height"></p>
-    <p>Decimal places: <input type="number" id="decimals"></p>
-    <br>
-    <!-- Enable/Disable Area and Perimeter Calculations -->
-    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-      <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
-      <span class="mdl-radio__label">Calculate Area</span>
-    </label>
-    <br>
-    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-      <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
-      <span class="mdl-radio__label">Calculate Perimeter</span>
-    </label>
-    <br>
-    <br>
-    <!-- Calculate Button and Output -->
-    <button onclick="Calculate()">Click to Calculate</button>
-    <div id="Output"></div>
+    <center>
+      <div>
+        <!-- Text and Inputs -->
+        <h1>Cone Volume Calculator</h1>
+        <br>
+        <p>Enter your data below, and click the button to calculate the volume of a Cone</p>
+        <br>
+        <img src="/images/ConeFormulas.png" style="width:250px;">
+        <br>
+        <p>Radius: <input type="number" id="radius"></p>
+        <p>Height: <input type="number" id="height"></p>
+        <p>Decimal places: <input type="number" id="decimals"></p>
+        <br>
+        <!-- Enable/Disable Area and Perimeter Calculations -->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+          <span class="mdl-radio__label">Calculate Volume</span>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+          <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+          <span class="mdl-radio__label">Calculate Surface Area</span>
+        </label>
+        <br>
+        <br>
+        <!-- Calculate Button and Output -->
+        <button onclick="Calculate()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Click to Calculate
+        </button>
+        <div id="Output"></div>
+      </div>
+    </center>
+   
+   
   </body>
 </html>
