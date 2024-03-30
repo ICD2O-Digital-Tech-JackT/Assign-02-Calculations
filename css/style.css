@@ -5,8 +5,10 @@ h1{
   padding:20px;
   background-color: orange;
   margin: 0;
+  color: #613f00;
 }
 p{
   font-weight: 600;
   font-size:17px;
+  color: #bd7b00;
 }

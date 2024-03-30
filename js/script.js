@@ -1,3 +1,4 @@
+/* Used to display the result of the calculations*/
 function Display(DisplayVar){
   if (document.getElementById("decimals").value){
       DisplayVar=DisplayVar.toFixed(document.getElementById("decimals").value)
@@ -7,6 +8,7 @@ function Display(DisplayVar){
   document.getElementById("Output").innerHTML="The area of this Cone is "+DisplayVar+"cm<sup>2</sup>";
 }
 
+/* Used to calculate the chosen formula based off of the user's input*/
 function Calculate(Formula){
   if (document.getElementById("option-1").checked){
     Formula="Area"
